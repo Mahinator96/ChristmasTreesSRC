@@ -1,0 +1,28 @@
+.pay {
+    @include adaptiv-mp(60, 30, padding-top);
+    @include adaptiv-mp(80, 30, padding-bottom);
+    background-color: var(--beigekDecor);
+    // .pay__title
+    &__title {
+        @include adaptiv-mp(48, 20, margin-bottom);
+    }
+    // .pay__list
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: toRem(30);
+
+        @media (max-width: 768.9px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    // .pay__item
+    &__item {
+        flex-basis: calc(100% / 3 - 20px);
+        
+        @media (max-width: 768.9px) {
+            width: 69%;
+        }
+    }
+}

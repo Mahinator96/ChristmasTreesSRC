@@ -1,0 +1,128 @@
+body {
+  background-color: #e3edf7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+/* PROGRESS */
+.progress__item {
+  color: #181818;
+  font-family: "Cabin", sans-serif;
+  line-height: 1.16;
+}
+.progress__item-show .progress__item-circle circle {
+  opacity: 1;
+}
+.progress__item-wrapper {
+  position: relative;
+  width: 10.9375rem;
+  height: 10.9375rem;
+  margin-bottom: 1.5625rem;
+  margin-bottom: calc(10px + 15 * ((100vw - 320px) / 1600));
+}
+@media (min-width: 1920px) {
+  .progress__item-wrapper {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .progress__item-wrapper {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1040px) {
+  .progress__item-wrapper {
+    width: 8.4375rem;
+    height: 8.4375rem;
+  }
+}
+@media (max-width: 640px) {
+  .progress__item-wrapper {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+.progress__item-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #DAAE3C;
+}
+@media (max-width: 640px) {
+  .progress__item-outer {
+    border: 3px solid #DAAE3C;
+  }
+}
+.progress__item-number {
+  font-size: calc(30px + 20 * ((100vw - 320px) / 1600));
+  font-weight: 700;
+}
+@media (min-width: 1920px) {
+  .progress__item-number {
+    font-size: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .progress__item-number {
+    font-size: 30px;
+  }
+}
+.progress__item-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  width: 10.9375rem;
+  height: 10.9375rem;
+}
+@media (max-width: 1040px) {
+  .progress__item-circle {
+    width: 8.4375rem;
+    height: 8.4375rem;
+  }
+}
+@media (max-width: 640px) {
+  .progress__item-circle {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+}
+.progress__item-circle circle {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 4.5px;
+  stroke-dasharray: 535;
+  stroke-dashoffset: 535;
+  animation: anim 2s linear forwards;
+  opacity: 0;
+}
+@media (max-width: 1040px) {
+  .progress__item-circle circle {
+    transform: scale(0.768);
+  }
+}
+@media (max-width: 640px) {
+  .progress__item-circle circle {
+    transform: scale(0.568);
+  }
+}
+.progress__item-name {
+  font-size: calc(16px + 9 * ((100vw - 320px) / 1600));
+  font-weight: 600;
+  text-align: center;
+}
+@media (min-width: 1920px) {
+  .progress__item-name {
+    font-size: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .progress__item-name {
+    font-size: 16px;
+  }
+}

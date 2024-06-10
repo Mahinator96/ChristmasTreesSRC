@@ -1,0 +1,26 @@
+.products {
+    // .products__list
+    &__list {
+    }
+    // .products__item
+    &__item {
+        background-color: var(--greenLite);
+
+        &:nth-child(odd) {
+            background-color: var(--greenDecor);
+
+        }
+        
+        &:nth-child(even) {
+
+            .product__container {
+                
+            }
+            
+            picture,
+            .product__picture {
+                order: -1;
+            }
+        }
+    }
+}

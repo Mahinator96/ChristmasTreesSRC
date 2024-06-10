@@ -1,0 +1,46 @@
+<section class="pay" id="pay">
+    <div class="container">
+        <h2 class="pay__title">Как можно оплатить</h2>
+
+        <ul class="pay__list">
+            <li class="pay__item">
+                @@include('../../module/option-pay.html', {
+                    "title": "Банковской картой",
+                    "description": "Visa/Mastercard или PayPal из любой страны",
+                    "img": {
+                        "src": "@img/icons/icons.svg#bank-card",
+                        "width": "209",
+                        "height": "28",
+                        "alt": "Тип банковской карты: Visa/Mastercard, МИР"
+                    }
+                })
+            </li>
+
+            <li class="pay__item">
+                @@include('../../module/option-pay.html', {
+                    "title": "Беспроцентная рассрочка от нас",
+                    "description": "Мы делим платеж на 2 части. Первую часть вы оплачиваете сразу, вторую через 15 дней после получения дерева",
+                    "img": {
+                        "src": "@img/svg/logo.svg",
+                        "width": "164",
+                        "height": "76",
+                        "alt": "Логотип Christmas Trees"
+                    }
+                })
+            </li>
+
+            <li class="pay__item">
+                @@include('../../module/option-pay.html', {
+                    "title": "Беспроцентная рассрочка от Тинькофф",
+                    "description": "Рассрочка на 3 месяца без первоначального платежа",
+                    "img": {
+                        "src": "@img/icons/icons.svg#bank-tinkoff",
+                        "width": "174",
+                        "height": "46",
+                        "alt": "Банк Тинькофф"
+                    }
+                })
+            </li>
+        </ul>
+    </div>
+</section>

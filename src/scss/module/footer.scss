@@ -1,0 +1,102 @@
+.footer {
+    @include adaptiv-mp(80, 30, padding-top);
+    @include adaptiv-mp(100, 30, padding-bottom);
+    background-color: var(--darkColor);
+    
+    // .footer__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 3fr 4fr 3fr;
+        @include adaptiv-mp(60, 40, row-gap, null, 768.9);
+        gap: toRem(25);
+
+        @media (max-width: 768.9px) {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: toRem(30);
+        }
+        @media (max-width: 425.9px) {
+            grid-template-columns: 1fr;
+            row-gap: toRem(20);
+        }
+        
+    }
+    // .footer__logo
+    &__logo {
+        @include adaptiv-mp(164, 73, width);
+        @include adaptiv-mp(70, 35, height);
+
+        @media (max-width: 768.9px) {
+            // order: -3;
+        }
+    }
+    // .footer__contacts
+    &__contacts {
+        @include adaptiv-mp(24, 14, "font-size");
+        line-height: 1.4;
+
+        @media (max-width: 768.9px) {
+            // order: -1;
+        }
+    }
+    // .footer__list 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        @include adaptiv-mp(20, 10, gap);
+        
+    }
+    // .footer__link
+    &__link {
+        // .footer__link--social
+        &--social {
+
+            picture,
+            img {
+                @include adaptiv-mp(40, 20, width);
+                @include adaptiv-mp(40, 20, height);
+            }
+        }
+    }
+    // .footer__list-social
+    &__list-social {
+        flex-direction: row;
+
+        @media (max-width: 768.9px) {
+        align-items: center;
+        }
+
+        @media (max-width: 768.9px) {
+            // order: -2;
+        }
+    }
+    // .footer__item-social
+    &__item-social {
+
+    }
+    // .footer__info-list
+    &__info-list {
+    }
+    // .footer__item
+    &__item {
+
+    }
+    // .footer__info-item
+    &__info-item {
+    }
+    // .footer__rules-list
+    &__rules-list {
+        
+    }
+    // .footer__rules-item
+    &__rules-item {
+        
+    }
+    // .footer__team
+    &__team {
+    }
+    // .footer__item-link
+    &__item-link {
+    }
+}
+.container {
+}

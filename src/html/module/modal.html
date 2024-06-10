@@ -1,0 +1,26 @@
+<div class="overlay overlay__@@overlay">
+    <div class="modal">
+        <button class="modal__close" type="button">
+            <img class="modal__close-img" src="@img/icons/icons.svg#modal-close" width="20" height="20" alt="Кнопка закрытия модального окна" title="Закрыть модальное окно">
+        </button>
+
+        <h2 class="modal__title">@@title</h2>
+
+        <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <div class="modal__form-wrapper">
+                <label class="modal__label" for="">
+                    <span class="modal__label-text">ФИО</span>
+                    <input class="modal__input" type="text" placeholder="Введите ваше ФИО" name="name" required>
+                </label>
+                <label class="modal__label" for="">
+                    <span class="modal__label-text">Телефон</span>
+                    <input class="modal__input" type="tel" placeholder="Введите ваш номер телефона" name="phone" required>
+                </label>
+            </div>
+
+            <input class="modal__order" type="hidden" name="order">
+
+            <button class="button modal__button button--brown">Заказать звонок</button>
+        </form>
+    </div>
+</div>

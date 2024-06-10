@@ -1,0 +1,34 @@
+.option-pay {
+    display: flex;
+    flex-direction: column;
+
+    // .option-pay__picture-wrapper
+    &__picture-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        @include adaptiv-mp(146, 73, height);
+        padding: toRem(10);
+        @include adaptiv-mp(20, 10, margin-bottom);
+        background-color: #fff;
+    }
+    // .option-pay__picture-img
+    &__picture-img {
+        width: 100%;
+        max-width: 50%;
+        object-fit: contain;
+        
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    // .option-pay__title
+    &__title {
+        @include adaptiv-mp(15, 10, margin-bottom);
+    }
+    // .option-pay__description
+    &__description {
+    }
+}

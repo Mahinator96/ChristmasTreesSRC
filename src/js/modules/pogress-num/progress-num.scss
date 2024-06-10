@@ -1,0 +1,18 @@
+.stat {
+  &--anim {
+
+    .stat-item {
+      opacity: 1;
+    }
+  }
+  // .stat-item
+  &-item {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+
+    @media (max-width: 1040px) {
+      text-align: center;
+      flex-grow: 1;
+    }
+  }
+}

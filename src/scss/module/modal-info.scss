@@ -1,0 +1,36 @@
+.modal-info {
+    color: var(--darkColor);
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &__title {
+        font-family: 'Cormorant', sans-serif;
+        @include adaptiv-mp(45, 32, "font-size");
+        @include adaptiv-mp(20, 10, margin-bottom);
+    }
+
+    &__text {
+        @include adaptiv-mp(30, 20, margin-bottom);
+
+        p:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__price {
+        @include adaptiv-mp(18, 12, "font-size");
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: 0.04em;
+        color: #fff;
+        width: fit-content;
+        @include adaptiv-mp(10, 4, padding-top);
+        @include adaptiv-mp(10, 4, padding-bottom);
+        @include adaptiv-mp(32, 13, padding-left);
+        @include adaptiv-mp(32, 13, padding-right);
+        margin-left: auto;
+        background-color: var(--greenDark);
+        border-radius: toRem(10);
+    }
+}

@@ -1,0 +1,75 @@
+/* FEATURES */
+.features {
+    @include adaptiv-mp(40, 25, padding-top);
+    @include adaptiv-mp(40, 25, padding-bottom);
+    background-color: var(--beigekDecor);
+
+    // .features__list
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: toRem(14);
+        flex-wrap: wrap;
+
+        @media (max-width: 768.9px) {
+            gap: toRem(20) toRem(24);
+        }
+    }
+    // .features__item
+    &__item {
+        @include adaptiv-mp(236, 162, flex-basis, null, 768.9);
+        @include adaptiv-mp(18, 12, "font-size", null, 768.9);
+
+        @media (max-width: 768.9px) {
+            flex-basis: calc(50% - 12px);
+
+            &:nth-child(odd) {
+                display: flex;
+                justify-content: end;
+            }
+        }
+
+        // .features__item--1::before
+        &--1 .features__item-wrapper::before {
+            background-image: var(--url-features-1);
+        }
+        // .features__item--2::before
+        &--2 .features__item-wrapper::before {
+            background-image: var(--url-features-2);
+        }
+        // .features__item--3::before
+        &--3 .features__item-wrapper::before {
+            background-image: var(--url-features-3);
+        }
+        // .features__item--4::before
+        &--4 .features__item-wrapper::before {
+            background-image: var(--url-features-4);
+        }
+
+        &-wrapper {
+            position: relative;
+            text-align: center;
+            @include adaptiv-mp(115, 55, padding-top, null, 768.9);
+
+            @media (max-width: 768.9px) {
+                display: flex;
+                @include adaptiv-mp(162, 138, width, 768.9);
+                justify-content: center;
+            }
+    
+            // .features__item::before
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                @include adaptiv-mp(100, 50, width, null, 768.9);
+                @include adaptiv-mp(100, 50, height, null, 768.9);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}

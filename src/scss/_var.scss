@@ -1,0 +1,15 @@
+$OneRem: 22;
+
+$fontFamily: 'Arial', 'sans-serif';
+$secondFontFamily: 'Cormorant', serif;
+$fontSize: toRem(18);
+
+$maxWidth: 1600;
+$minWidth: 320;
+
+$containerWidth: 1290;
+
+$pc: $containerWidth + px;
+$tablet: 991.98;
+$mobile: 767.98;
+$mobileSmall: 479.98;
